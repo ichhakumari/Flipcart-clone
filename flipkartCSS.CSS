@@ -1,0 +1,213 @@
+body {
+    background-color: #F1F2F4;
+    font-family: 'Roboto', sans-serif;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+.container {
+    width: 1600px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+.w-100{
+    width: 100%;
+}
+#header {
+    padding: 10px 0px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0px;
+}
+
+
+#header .logo {
+    width: 10%;
+    padding-top: 5px;
+}
+#header .search {
+    width: 50%;
+    margin-left: 25px;
+}
+#header .user-links {
+    width: 35%;
+    padding-top: 10px;
+}
+
+#header .search input[type="text"] {
+    width: 90%;
+    height: 40px;
+    background-color: #F0F5FF;
+    border: none;
+    border-radius: 10px;
+    padding: 0px 15px;
+    font-size: 20px;
+}
+#header .search button {
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+}
+
+#header .user-links > ul > li {
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 16px;
+}
+
+#header .user-links ul li a {
+    color: #000;
+}
+
+#header .user-links .dropdown {
+    position: absolute;
+    background-color: #fff;
+    z-index: 1;
+    width: 12%;
+    top: 40px;
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.2);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: none;
+}
+#header .user-links .dropdown .dropdown-header {
+    padding: 10px;
+    border-bottom: 1px solid;
+}
+#header .user-links .dropdown ul li a {
+    display: block;
+    padding: 10px;
+}
+#header .user-links .dropdown a:hover {
+    background-color: #F0F5FF;
+}
+
+#header .user-links ul li:hover .dropdown {
+    display: block;
+}
+
+/* Navigation CSS */
+#main-nav {
+    background-color: #fff;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+#main-nav ul li {
+    display: inline-block;
+    width: 9%;
+    text-align: center;
+}
+#main-nav ul li span {
+    display: block;
+}
+#main-nav ul li a {
+    color: #000;
+    display: block;
+    padding: 5px;
+}
+
+/* Banner */
+#banner {
+    margin-bottom: 30px;
+}
+#banner .slideshow {
+    width: 500%;
+    animation-name: carousel;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+#banner .slide {
+    display: inline-block;
+    width: 20%;
+    margin: 0px -2px;
+}
+@keyframes carousel {
+    0%,15% {
+        transform: translateX(0%);
+    }
+    20%, 35% {
+        transform: translateX(-20%);
+    }
+    40%,55% {
+        transform: translateX(-40%);
+    }
+    60%,75% {
+        transform: translateX(-60%);
+    }
+    80%,95% {
+        transform: translateX(-80%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+/* Best of Electronics */
+#section-1 .col-1 {
+    width: 84%;
+    background-color: #fff;
+    padding: 30px 10px 50px;
+}
+#section-1 .col-2 {
+    width: 15%;
+}
+#section-1 .col-1 h2 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.products .product {
+    display: inline-block;
+    width: 14%;
+    margin: 0px 15px;
+    text-align: center;
+    border: 1px solid #000;
+    vertical-align: top;
+    height: 270px;
+}
+.products .product a {
+    display: block;
+    padding: 20px 10px;
+    color: #000;
+}
+.products .product img {
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+.section {
+    margin-bottom: 35px;
+}
+.section .wrapper {
+    background-color: #fff;
+    padding: 30px 10px 50px;
+}
+.section .wrapper h2 {
+    margin-bottom: 35px;
+}
