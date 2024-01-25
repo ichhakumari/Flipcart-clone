@@ -1,7 +1,6 @@
 # Flipkart-demo-website
 <P>Hello Everyone, We have created a demo Flipkart website: In which we have used navigation bar, grid, banner, section, and form. </P>
-<OL>
-  Language used:
+<OL> <B>Language used:</B>
 <LI>HTML</LI> 
 <LI>CSS</LI> 
 <LI>BOOTSTRAP</LI> 
